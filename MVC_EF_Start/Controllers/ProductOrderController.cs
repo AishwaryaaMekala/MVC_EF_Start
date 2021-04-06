@@ -24,7 +24,7 @@ namespace MVC_EF_Start.Controllers
 
             //dbContext.Products.Add();
             //dbContext.Orders.Add();
-            //dbContext.OrderDetails.Add();
+            //dbContext.OrderDetail.Add();
 
             dbContext.SaveChanges();
             return View();

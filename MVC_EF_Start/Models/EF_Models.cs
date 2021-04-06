@@ -53,9 +53,9 @@ namespace MVC_EF_Start.Models
         public int Id { get; set; }
         public string ProductName { get; set; }
         public double OrderCost { get; set; }
-        public List<OrderDetails> AllOrders { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; }
     }
-    public class OrderDetails
+    public class OrderDetail
     {
         public int Id { get; set; }
         public int OrderQuantity { get; set; }

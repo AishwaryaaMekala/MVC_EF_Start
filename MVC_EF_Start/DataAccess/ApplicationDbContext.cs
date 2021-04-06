@@ -13,6 +13,6 @@ namespace MVC_EF_Start.DataAccess
         //synchronizing with database
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetails> AllOrders { get; set; }
+        public DbSet<OrderDetail> OrderDetails  { get; set; }
   }
 }
