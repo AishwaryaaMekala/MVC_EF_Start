@@ -9,5 +9,10 @@ namespace MVC_EF_Start.DataAccess
 
     public DbSet<Company> Companies { get; set; }
     public DbSet<Quote> Quotes { get; set; }
+
+        //synchronizing with database
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetails> AllOrders { get; set; }
   }
 }

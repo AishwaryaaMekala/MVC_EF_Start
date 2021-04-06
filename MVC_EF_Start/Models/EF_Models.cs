@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace MVC_EF_Start.Models
@@ -37,4 +38,28 @@ namespace MVC_EF_Start.Models
   {
     public Quote[] chart { get; set; }
   }
+
+    //Model classes for inclass10
+    public class Order
+    {
+        public int Id { get; set; }
+        public DateTime OrderDate { get; set; }
+        public Double OrderCost { get; set; }
+        public List<Product> Products { get; set; }
+    }
+
+    public class Product
+    {
+        public int Id { get; set; }
+        public string ProductName { get; set; }
+        public double OrderCost { get; set; }
+        public List<OrderDetails> AllOrders { get; set; }
+    }
+    public class OrderDetails
+    {
+        public int Id { get; set; }
+        public int OrderQuantity { get; set; }
+        public Order MyOrders { get; set; }
+        public Product MyProducts { get; set; }
+    }
 }
